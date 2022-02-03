@@ -1,0 +1,37 @@
+<meta charset="utf-8">
+
+<script type="text/javascript">
+function saltarlinea(){
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+
+function imprimir(texto){
+
+	document.write(texto);
+}
+
+function sortear(n){
+	return Math.round(Math.random()*n);
+
+}
+
+var numeroN = parseInt(prompt("ingrese un numero cual quiera"));
+var numeroPensado = sortear(numeroN);
+var numeroLanzado = parseInt(prompt("ingrese un numero cual quiera entre 0 y "+numeroN));
+
+if(numeroPensado == numeroLanzado){
+
+	imprimir("usted acertó");
+}else{
+
+	imprimir("Usted se ha equivocado el numero correcto es: " +numeroPensado)
+
+}
+
+</script>

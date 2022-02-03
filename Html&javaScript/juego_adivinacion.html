@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+
+<script type="text/javascript">
+function saltarlinea(){
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+
+function imprimir(texto){
+
+	document.write(texto);
+}
+
+var numeroPensado = Math.round(Math.random()*10);
+var numeroLanzado = parseInt(prompt("ingrese un numero entre 0 y 10"));
+
+if(numeroPensado == numeroLanzado){
+
+	imprimir("usted acertó");
+}else{
+
+	imprimir("Usted se ha equivocado el numero correcto es: " +numeroPensado)
+
+}
+
+</script>
